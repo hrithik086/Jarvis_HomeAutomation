@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="TTS resources"/>
+	<classpathentry kind="src" path="serial comm libraries"/>
+	<classpathentry kind="src" path="voice resources"/>
+	<classpathentry kind="src" path="voice Library"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="TTS resources/guava-22.0.jar"/>
+	<classpathentry kind="lib" path="TTS resources/marytts-builder-5.2-jar-with-dependencies.jar"/>
+	<classpathentry kind="lib" path="TTS resources/marytts-lang-en-5.2.jar"/>
+	<classpathentry kind="lib" path="TTS resources/voice-cmu-rms-hsmm-5.2.jar"/>
+	<classpathentry kind="lib" path="TTS resources/voice-cmu-slt-hsmm-5.2.jar"/>
+	<classpathentry kind="lib" path="TTS resources/voice-dfki-poppy-hsmm-5.2.jar"/>
+	<classpathentry kind="lib" path="serial comm libraries/jSerialComm-2.6.2.jar"/>
+	<classpathentry kind="lib" path="voice Library/sphinx4-core-5prealpha-20160628.232526-10.jar"/>
+	<classpathentry kind="lib" path="voice Library/sphinx4-data-5prealpha-20160628.232535-10.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

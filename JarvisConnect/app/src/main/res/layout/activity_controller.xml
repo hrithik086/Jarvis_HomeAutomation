@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Controller">
+
+
+    <RelativeLayout
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_entry"
+            android:width="250dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="15dp"
+            android:hint="enter your command here"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="send"
+            android:id="@+id/send_button"
+            android:layout_toRightOf="@+id/text_entry"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="25dp"
+            android:onClick="onClickSendButton"
+            />
+
+        <ImageView
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:id="@+id/lightbulb_image"
+            android:src="@drawable/lightbulb"
+            android:contentDescription="light bulb"
+            android:layout_below="@+id/text_entry"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="15dp"/>
+
+        <ImageView
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:id="@+id/fan_image"
+            android:src="@drawable/fan"
+            android:contentDescription="fan icon"
+            android:layout_below="@+id/lightbulb_image"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="15dp"/>
+
+        <ImageView
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:id="@+id/flashlight_image"
+            android:src="@drawable/flashlight"
+            android:contentDescription="flashlight icon"
+            android:layout_below="@+id/fan_image"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="15dp"/>
+
+        <ImageView
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:id="@+id/sos_image"
+            android:src="@drawable/sos"
+            android:contentDescription="sos icon"
+            android:layout_below="@+id/flashlight_image"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="15dp"/>
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/light_text"
+            android:layout_below="@+id/text_entry"
+            android:layout_toRightOf="@+id/lightbulb_image"
+            android:layout_marginTop="72dp"
+            android:layout_marginLeft="30dp"
+            android:text="Light"
+            android:textSize="28dp"/>
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_fan"
+            android:layout_below="@+id/light_text"
+            android:layout_toRightOf="@+id/fan_image"
+            android:layout_marginTop="60dp"
+            android:layout_marginLeft="30dp"
+            android:text="Fan"
+            android:textSize="28dp"/>
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_flashlight"
+            android:layout_below="@+id/text_fan"
+            android:layout_toRightOf="@+id/flashlight_image"
+            android:layout_marginTop="60dp"
+            android:layout_marginLeft="30dp"
+            android:text="EM Light"
+            android:textSize="28dp"/>
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_sos"
+            android:layout_below="@+id/text_flashlight"
+            android:layout_toRightOf="@+id/sos_image"
+            android:layout_marginTop="60dp"
+            android:layout_marginLeft="30dp"
+            android:text="SOS"
+            android:textSize="28dp"/>
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/light_switch"
+            android:layout_below="@+id/text_entry"
+            android:layout_toRightOf="@+id/light_text"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="78dp"
+            android:onClick="onClickLightSwitch"/>
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/fan_switch"
+            android:layout_below="@+id/light_switch"
+            android:layout_toRightOf="@+id/text_fan"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="73dp"
+            android:onClick="onClickFanSwitch"/>
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/flashlight_switch"
+            android:layout_below="@+id/fan_switch"
+            android:layout_toRightOf="@+id/text_flashlight"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="73dp"
+            android:onClick="onClickFlashlightSwitch"/>
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/sos_switch"
+            android:layout_below="@+id/flashlight_switch"
+            android:layout_toRightOf="@+id/text_sos"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="73dp"
+            android:onClick="onClickSosSwitch"/>
+
+
+
+    </RelativeLayout>
+</ScrollView>

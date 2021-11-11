@@ -1,0 +1,13 @@
+#JSGF V1.0;
+
+/**
+ * JSGF Grammar 
+ */
+
+grammar grammar;
+
+public <name> = ( jarvis | hello jarvis | jarvis are you listening);
+public <fun> = (introduce yourself | tell me a joke | switch off everything);
+public <command> = (ligths on | lights off | fan on | fan off | flash light on | flash light off);
+public <instruction> = ( open chrome | close chrome);
+ 
